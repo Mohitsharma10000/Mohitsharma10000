@@ -25,15 +25,41 @@ jobs:
             dist/github-contribution-grid-snake.svg?color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
-      - name: Tidy SVGs (labels, no progress bar, orange snake that turns green)
+      - name: Tidy SVGs (counts, labels, no progress bar, orange snake that turns green)
         run: |
           python3 - <<'PYEOF'
           import datetime
           import glob
+          import os
           import re
+          import urllib.request
 
           ORANGE, YELLOW, GREEN = "#f97316", "#eab308", "#22c55e"
           PAD = 3
+
+
+          def contribution_counts():
+              """(year, contributions this year, contributions in the last 12 months) from the public profile."""
+              user = os.environ.get("GITHUB_REPOSITORY_OWNER", "")
+              year = datetime.date.today().year
+
+              def read(query):
+                  req = urllib.request.Request(
+                      f"https://github.com/users/{user}/contributions{query}",
+                      headers={"User-Agent": "Mozilla/5.0"},
+                  )
+                  html = urllib.request.urlopen(req, timeout=20).read().decode()
+                  m = re.search(r"([\d,]+)\s+contributions?\s+in\s+(?:the last year|\d{4})", html)
+                  return m.group(1)
+
+              try:
+                  return year, read(f"?from={year}-01-01&to={year}-12-31"), read("")
+              except Exception as e:
+                  print("could not read contribution counts:", e)
+                  return None
+
+
+          INFO = contribution_counts()
 
 
           def strip_blocks(css, pattern):
@@ -71,7 +97,7 @@ jobs:
               ncols = len({c[0] for c in cells})
               dark = path.endswith("-dark.svg")
               ink = "#8b949e" if dark else "#57606a"
-              L, T, B, R = 32, 20, 24, 4  # room for weekday labels, month labels, legend
+              L, T, B, R = 32, (44 if INFO else 20), 24, 4  # room for weekday labels, header + month labels, legend
 
               vx, vy = x0 - L, y0 - T
               vw, vh = (x1 - x0) + L + R, (y1 - y0) + T + B
@@ -93,6 +119,15 @@ jobs:
                   marks.pop(0)
 
               t = []
+              if INFO:
+                  year, this_year, last_year = INFO
+                  strong = "#e6edf3" if dark else "#24292f"
+                  t.append(
+                      f'<text x="{vx + 2:g}" y="{vy + 15:g}" font-size="13">'
+                      f'<tspan font-weight="700" fill="{strong}">{this_year}</tspan> contributions in {year}'
+                      f'<tspan dx="12">&#183;</tspan>'
+                      f'<tspan dx="12" font-weight="700" fill="{strong}">{last_year}</tspan> in the last year</text>'
+                  )
               for i, name in marks:
                   t.append(f'<text x="{x0 + i * 16:g}" y="{y0 - 8:g}">{name}</text>')
               for row, name in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
