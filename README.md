@@ -1,42 +1,137 @@
-<h1 align="center">Hi 👋, I'm Mohit Sharma</h1>
-<h3 align="center">A passionate Full Stack Engineer from India</h3>
+<div align="center">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=mohitsharma10000&label=Profile%20views&color=0e75b6&style=flat" alt="mohitsharma10000" /> </p>
+<br/>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mohitsharma10000" alt="mohitsharma10000" /></a> </p>
+# Mohit Sharma
 
-<p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
+**Full-stack developer. Web, mobile and AI agents.**
 
-- 🔭 I’m currently working on [Aegis Mesh](https://github.com/Mohitsharma10000/AegisMesh)
+<sub>India</sub>
 
-- 🌱 I’m currently learning **Computer Networking without Internet and Signal**
+<br/>
 
-- 👯 I’m looking to collaborate on [Aegis Mesh](https://github.com/Mohitsharma10000/AegisMesh)
+<a href="mailto:mohitsharma14651@gmail.com">Email</a> &nbsp;·&nbsp;
+<a href="https://linkedin.com/in/mohit-sharma-156073329">LinkedIn</a> &nbsp;·&nbsp;
+<a href="https://www.leetcode.com/mohit_1001">LeetCode</a> &nbsp;·&nbsp;
+<a href="https://auth.geeksforgeeks.org/user/ms1645g2s">GeeksforGeeks</a> &nbsp;·&nbsp;
+<a href="https://drive.google.com/file/d/1TK0X6iSBbYFk-7t-VS-f-HP8CqOwbNat/view?usp=sharing">Resume</a>
 
-- 🤝 I’m looking for help with [Aegish Mesh](https://github.com/Mohitsharma10000/AegisMesh)
+<br/>
 
-- 💬 Ask me about **Full Stack Development**
+</div>
 
-- 📫 How to reach me **mohitsharma14651@gmail.com**
+---
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1TK0X6iSBbYFk-7t-VS-f-HP8CqOwbNat/view?usp=sharinghttps://drive.google.com/file/d/1TK0X6iSBbYFk-7t-VS-f-HP8CqOwbNat/view?usp=sharing](https://drive.google.com/file/d/1TK0X6iSBbYFk-7t-VS-f-HP8CqOwbNat/view?usp=sharinghttps://drive.google.com/file/d/1TK0X6iSBbYFk-7t-VS-f-HP8CqOwbNat/view?usp=sharing)
+## About
 
-- ⚡ Fun fact **I think I can do anything**
+I build web apps, mobile apps and AI agents, mostly in TypeScript and Python. I also practice DSA on LeetCode and GeeksforGeeks to keep my fundamentals sharp.
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/mohit-sharma-156073329" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="mohit-sharma-156073329" height="30" width="40" /></a>
-<a href="https://instagram.com/the_.mohit" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="the_.mohit" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/mohit_1001" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="mohit_1001" height="30" width="40" /></a>
-<a href="https://auth.geeksforgeeks.org/user/ms1645g2s" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="ms1645g2s" height="30" width="40" /></a>
-</p>
+Right now I'm working on [Aegis Mesh](https://github.com/Mohitsharma10000/AegisMesh), which is about networking when there is no internet or cell signal. Still a lot to figure out there, and that's the fun part.
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://appwrite.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg" alt="appwrite" width="40" height="40"/> </a> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a> <a href="https://www.electronjs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/electron/electron-original.svg" alt="electron" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
+<br/>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=mohitsharma10000&show_icons=true&locale=en&layout=compact" alt="mohitsharma10000" /></p>
+## Stack
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mohitsharma10000&show_icons=true&locale=en" alt="mohitsharma10000" /></p>
+**Languages**<br/>
+<img src="https://skillicons.dev/icons?i=py,ts,js,java,kotlin,dart,c,cpp" alt="Python, TypeScript, JavaScript, Java, Kotlin, Dart, C, C++" />
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mohitsharma10000&" alt="mohitsharma10000" /></p>
+**Frontend and mobile**<br/>
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,flutter,androidstudio" alt="React, Next.js, Tailwind CSS, Flutter, Android" />
 
+**Backend and data**<br/>
+<img src="https://skillicons.dev/icons?i=nodejs,flask,firebase,appwrite,mongodb,postgres,mysql" alt="Node.js, Flask, Firebase, Appwrite, MongoDB, PostgreSQL, MySQL" />
+
+**AI/ML**<br/>
+<img src="https://skillicons.dev/icons?i=tensorflow,pandas" alt="TensorFlow, Pandas" />
+
+**Tools and cloud**<br/>
+<img src="https://skillicons.dev/icons?i=git,aws,figma,arduino,electron" alt="Git, AWS, Figma, Arduino, Electron" />
+
+<br/>
+
+## Projects
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Mohitsharma10000/-Smart-Bus-Routing-agent"><b>Smart Bus Routing Agent</b></a><br/>
+      An AI agent for planning bus routes.<br/>
+      <sub>Python</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Mohitsharma10000/smart-parking-ai-agent"><b>Smart Parking AI Agent</b></a><br/>
+      An AI agent that helps with parking decisions.<br/>
+      <sub>Python</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Mohitsharma10000/Skill-Match-AI"><b>Skill Match AI</b></a><br/>
+      Matches skills to opportunities using AI.<br/>
+      <sub>TypeScript</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Mohitsharma10000/Shopmate"><b>Shopmate</b></a><br/>
+      A shopping app.<br/>
+      <sub>TypeScript</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Mohitsharma10000/portfolio-brilliance"><b>Portfolio Brilliance</b></a><br/>
+      A personal portfolio website.<br/>
+      <sub>TypeScript</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Mohitsharma10000/Event-Excellence"><b>Event Excellence</b></a><br/>
+      An event website.<br/>
+      <sub>HTML</sub>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+## Numbers
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Mohitsharma10000&show_icons=true&hide_border=true&bg_color=00000000&title_color=A78BFA&icon_color=7C3AED&text_color=9CA3AF&rank_icon=github" />
+  <img alt="GitHub stats for Mohitsharma10000" src="https://github-readme-stats.vercel.app/api?username=Mohitsharma10000&show_icons=true&hide_border=true&bg_color=00000000&title_color=6D28D9&icon_color=7C3AED&text_color=4B5563&rank_icon=github" width="49%" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohitsharma10000&layout=compact&hide_border=true&bg_color=00000000&title_color=A78BFA&text_color=9CA3AF" />
+  <img alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohitsharma10000&layout=compact&hide_border=true&bg_color=00000000&title_color=6D28D9&text_color=4B5563" width="49%" />
+</picture>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=Mohitsharma10000&hide_border=true&background=00000000&ring=A78BFA&fire=7C3AED&currStreakLabel=A78BFA&currStreakNum=9CA3AF&sideNums=9CA3AF&sideLabels=9CA3AF&dates=6B7280" />
+  <img alt="GitHub streak" src="https://streak-stats.demolab.com?user=Mohitsharma10000&hide_border=true&background=00000000&ring=7C3AED&fire=7C3AED&currStreakLabel=6D28D9&currStreakNum=4B5563&sideNums=4B5563&sideLabels=4B5563&dates=6B7280" />
+</picture>
+
+</div>
+
+<br/>
+
+## Contributions
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mohitsharma10000/Mohitsharma10000/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mohitsharma10000/Mohitsharma10000/output/github-contribution-grid-snake.svg" />
+  <img alt="Snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/Mohitsharma10000/Mohitsharma10000/output/github-contribution-grid-snake.svg" />
+</picture>
+
+</div>
+
+<br/>
+
+---
+
+<div align="center">
+  <sub>Reach me at <a href="mailto:mohitsharma14651@gmail.com">mohitsharma14651@gmail.com</a></sub>
+</div>
