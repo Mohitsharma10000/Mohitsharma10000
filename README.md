@@ -73,9 +73,9 @@ Right now I'm working on [Aegis Mesh](https://github.com/Mohitsharma10000/AegisM
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mohitsharma10000/Mohitsharma10000/output/github-contribution-grid-snake-dark.svg?v=3" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mohitsharma10000/Mohitsharma10000/output/github-contribution-grid-snake.svg?v=3" />
-  <img alt="Snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/Mohitsharma10000/Mohitsharma10000/output/github-contribution-grid-snake.svg?v=3" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mohitsharma10000/Mohitsharma10000/output/github-contribution-grid-snake-dark.svg?v=4" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mohitsharma10000/Mohitsharma10000/output/github-contribution-grid-snake.svg?v=4" />
+  <img alt="Snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/Mohitsharma10000/Mohitsharma10000/output/github-contribution-grid-snake.svg?v=4" />
 </picture>
 
 </div>
