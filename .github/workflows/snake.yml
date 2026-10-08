@@ -20,14 +20,17 @@ jobs:
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.SNAKE_TOKEN || github.token }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.svg?color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
 
-      - name: Tidy SVGs (no progress bar, orange snake that turns green)
+      - name: Tidy SVGs (labels, no progress bar, orange snake that turns green)
         run: |
           python3 - <<'PYEOF'
-          import glob, re
+          import datetime
+          import glob
+          import re
 
           ORANGE, YELLOW, GREEN = "#f97316", "#eab308", "#22c55e"
           PAD = 3
@@ -52,7 +55,7 @@ jobs:
               return "".join(out)
 
 
-          for path in glob.glob("dist/*.svg"):
+          def tidy(path):
               s = open(path, encoding="utf-8").read()
 
               # 1. remove the progress bar under the grid
@@ -60,15 +63,57 @@ jobs:
               s = strip_blocks(s, r"@keyframes u[0-9a-z]+\{")
               s = re.sub(r"\.u(\.u[0-9a-z]+)?\{[^}]*\}", "", s)
 
-              # 2. crop the canvas to the contribution grid, so the snake never shows outside it
+              # 2. crop the canvas to the grid and add month / weekday labels + legend
               cells = [(float(x), float(y)) for x, y in
                        re.findall(r'<rect class="c[^"]*" x="(-?[\d.]+)" y="(-?[\d.]+)"', s)]
               x0, y0 = min(c[0] for c in cells), min(c[1] for c in cells)
               x1, y1 = max(c[0] for c in cells) + 12, max(c[1] for c in cells) + 12
-              vx, vy, vw, vh = x0 - PAD, y0 - PAD, (x1 - x0) + 2 * PAD, (y1 - y0) + 2 * PAD
+              ncols = len({c[0] for c in cells})
+              dark = path.endswith("-dark.svg")
+              ink = "#8b949e" if dark else "#57606a"
+              L, T, B, R = 32, 20, 24, 4  # room for weekday labels, month labels, legend
+
+              vx, vy = x0 - L, y0 - T
+              vw, vh = (x1 - x0) + L + R, (y1 - y0) + T + B
               s = re.sub(r"<svg [^>]*>",
                          f'<svg viewBox="{vx:g} {vy:g} {vw:g} {vh:g}" width="{vw:g}" height="{vh:g}" '
                          f'xmlns="http://www.w3.org/2000/svg">', s, count=1)
+
+              # month labels: one per month, placed on the week that contains the 1st
+              today = datetime.date.today()
+              sunday = today - datetime.timedelta(days=(today.weekday() + 1) % 7)
+              marks, prev = [], None
+              for i in range(ncols):
+                  wk = sunday - datetime.timedelta(weeks=ncols - 1 - i)
+                  month = (wk + datetime.timedelta(days=6)).month
+                  if month != prev:
+                      marks.append((i, (wk + datetime.timedelta(days=6)).strftime("%b")))
+                  prev = month
+              if len(marks) > 1 and marks[1][0] - marks[0][0] < 3:
+                  marks.pop(0)
+
+              t = []
+              for i, name in marks:
+                  t.append(f'<text x="{x0 + i * 16:g}" y="{y0 - 8:g}">{name}</text>')
+              for row, name in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
+                  t.append(f'<text x="{x0 - 8:g}" y="{y0 + row * 16 + 9.5:g}" text-anchor="end">{name}</text>')
+
+              # legend (Less ... More) using this file's own palette
+              pal = [re.search(rf"--c{k}:(#[0-9a-fA-F]+)", s).group(1) for k in range(5)]
+              lx = x1 - 130
+              ly = y1 + 6
+              t.append(f'<text x="{lx:g}" y="{ly + 9:g}">Less</text>')
+              for k, col in enumerate(pal):
+                  t.append(f'<rect x="{lx + 28 + k * 14:g}" y="{ly:g}" width="10" height="10" rx="2" fill="{col}"/>')
+              t.append(f'<text x="{lx + 28 + 5 * 14 + 2:g}" y="{ly + 9:g}">More</text>')
+
+              labels = (
+                  f'<g fill="{ink}" font-size="10" '
+                  f'font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif">'
+                  + "".join(t) + "</g>"
+              )
+              clip = (f'<clipPath id="grid"><rect x="{x0 - 1:g}" y="{y0 - 1:g}" '
+                      f'width="{(x1 - x0) + 2:g}" height="{(y1 - y0) + 2:g}"/></clipPath>')
 
               # 3. snake starts orange and turns green as it eats
               dur = re.search(r"\.s\{[^}]*?(\d+)ms", s).group(1)
@@ -79,10 +124,19 @@ jobs:
                   f"@keyframes sg{{0%{{fill:{ORANGE}}}50%{{fill:{YELLOW}}}98%,100%{{fill:{GREEN}}}}}</style>",
                   1,
               )
-              s = re.sub(r'((?:<rect class="s s[0-9a-z]+"[^>]*/>)+)', r'<g class="sg">\1</g>', s)
+              s = re.sub(r'((?:<rect class="s s[0-9a-z]+"[^>]*/>)+)',
+                         r'<g class="sg" clip-path="url(#grid)">\1</g>', s)
+              s = s.replace("</svg>", clip + labels + "</svg>")
 
               open(path, "w", encoding="utf-8").write(s)
               print("processed", path)
+
+
+          for path in glob.glob("dist/*.svg"):
+              try:
+                  tidy(path)
+              except Exception as e:
+                  print("skipped", path, "->", e)
           PYEOF
 
       - name: Push to output branch
